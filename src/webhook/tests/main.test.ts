@@ -1,6 +1,7 @@
+import { APIGatewayProxyEvent } from 'aws-lambda'
 import { sendWebhookEvent } from '../lib/main'
 
-const ApiGwRequest = {
+const ApiGwRequest: APIGatewayProxyEvent = {
   headers: {},
   multiValueHeaders: {},
   httpMethod: 'GET',
@@ -14,6 +15,8 @@ const ApiGwRequest = {
   requestContext: {
     accountId: '',
     apiId: '',
+    authorizer: null,
+    protocol: '',
     httpMethod: '',
     path: '',
     stage: '',
@@ -27,6 +30,7 @@ const ApiGwRequest = {
       apiKey: null,
       apiKeyId: null,
       caller: null,
+      clientCert: null,
       cognitoAuthenticationProvider: null,
       cognitoAuthenticationType: null,
       userArn: null,
