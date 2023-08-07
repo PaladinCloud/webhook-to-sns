@@ -17,9 +17,9 @@ Metadata:
     LicenseUrl: LICENSE
     ReadmeUrl: README.md
     Labels: ['webhook','sns']
-    HomePageUrl: https://github.com/vacationtracker/generic-webhook-to-sns
+    HomePageUrl: https://github.com/PaladinCloud/webhook-to-sns
     SemanticVersion: 1.0.0
-    SourceCodeUrl: https://github.com/vacationtracker/generic-webhook-to-sns
+    SourceCodeUrl: https://github.com/PaladinCloud/webhook-to-sns
 
 Resources:
   WebhookTopic:
