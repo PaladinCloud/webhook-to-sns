@@ -5,7 +5,7 @@ interface IMessageAttributes {
 }
 
 interface INotificationRepository {
-  send: (message: Object, messageAttributes?: IMessageAttributes) => Promise<any>
+  send: (message: any, messageAttributes?: IMessageAttributes) => Promise<any>
 }
 
 export async function sendWebhookEvent(event: APIGatewayProxyEvent, notification: INotificationRepository) {

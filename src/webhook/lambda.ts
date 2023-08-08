@@ -2,7 +2,7 @@
 import 'source-map-support/register'
 
 import { APIGatewayProxyEvent } from 'aws-lambda'
-import { SnsNotificationRepository } from '../common/sns-repository'
+import { SnsNotificationRepository } from '../common/redhat-acs-sns-repository'
 import { sendWebhookEvent } from './lib/main'
 
 export async function handler(event: APIGatewayProxyEvent) {

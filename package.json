@@ -11,7 +11,7 @@
     "pretest": "npm run lint",
     "test": "jest"
   },
-  "author": "Slobodan Stojanović <slobodan@cloudhorizon.com> (http://slobodan.me)",
+  "author": "Paladin Cloud",
   "license": "MIT",
   "dependencies": {
     "@types/aws-lambda": "^8.10.119",
